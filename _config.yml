@@ -17,7 +17,7 @@ title: My adventures in tech
 email: contact@janvanbraeckel.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal projects, things I find useful and more.
-baseurl: '' # the subpath of your site, e.g. /blog
+baseurl: '/blog' # the subpath of your site, e.g. /blog
 url: 'https://blog.janvanbraeckel.com' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: janvbraeckel
 github_username: JanVanBraeckel
