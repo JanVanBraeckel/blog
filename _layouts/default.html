@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <div class="janvanbraeckel mdl-layout janvanbraeckel--blogpost mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content" aria-label="Content">
+        {{ content }}
+        {%- include footer.html -%}
+      </main>
+    </div>
+
+
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script>
+    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media, .mdl-card__title'), function(el) {
+      var link = el.querySelector('a');
+      if(!link) {
+        return;
+      }
+      var target = link.getAttribute('href');
+      if(!target) {
+        return;
+      }
+      el.addEventListener('click', function() {
+        location.href = target;
+      });
+    });
+  </script>
+  </body>
+
+</html>
