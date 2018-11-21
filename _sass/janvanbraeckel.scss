@@ -52,9 +52,10 @@ body .janvanbraeckel {
 }
 
 .janvanbraeckel.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 100px;
   position: relative;
   -webkit-overflow-scrolling: touch;
+  z-index: auto;
 }
 .janvanbraeckel .mdl-card {
   display: -webkit-flex;
@@ -449,7 +450,7 @@ body .janvanbraeckel {
 }
 
 .janvanbraeckel--blogpost .demo-back {
-  position: absolute;
+  position: fixed;
   top: 16px;
   left: 16px;
   color: white;
@@ -485,17 +486,17 @@ body .janvanbraeckel {
   display: flex !important;
 }
 
-.social-btn,
-.social-btn.mdl-mini-footer--social-btn,
-.social-btn.mdl-mini-footer__social-btn {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  cursor: pointer;
-  opacity: 0.46;
-  border-radius: 2px;
-}
+// .social-btn,
+// .social-btn.mdl-mini-footer--social-btn,
+// .social-btn.mdl-mini-footer__social-btn {
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   background-color: transparent;
+//   cursor: pointer;
+//   opacity: 0.46;
+//   border-radius: 2px;
+// }
 .social-btn__twitter {
   background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
 }
@@ -507,15 +508,15 @@ body .janvanbraeckel {
   background: transparent;
 }
 
-.janvanbraeckel .mdl-mini-footer {
-  margin-top: 80px;
-  height: 120px;
-  padding: 40px;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: white;
-  box-sizing: border-box;
-}
+// .janvanbraeckel .mdl-mini-footer {
+//   margin-top: 80px;
+//   height: 120px;
+//   padding: 40px;
+//   -webkit-align-items: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   background-color: white;
+//   box-sizing: border-box;
+// }
 
 @import 'janvanbraeckel/base';
