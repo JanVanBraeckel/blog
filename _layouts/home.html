@@ -36,11 +36,11 @@ layout: default
     </div>
 
     {%- endfor -%} {% if paginator.total_pages > 1 %}
-    <nav class="demo-nav mdl-cell mdl-cell--12-col">
+    <nav class="nav mdl-cell mdl-cell--12-col">
       {% if paginator.previous_page %}
       <a
         href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-        class="demo-nav__button"
+        class="nav__button"
         title="Newer"
       >
         <button
@@ -55,7 +55,7 @@ layout: default
       {% if paginator.next_page %}
       <a
         href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"
-        class="demo-nav__button"
+        class="nav__button"
         title="Older"
       >
         Older
